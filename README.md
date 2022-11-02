@@ -1,2 +1,2 @@
 # Restaurant
-ES6 Module &amp; Wbpack. Tabular browsing for each module
+ES6 Module and Webpack. Tabular browsing for each module

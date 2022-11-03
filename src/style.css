@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'BonheurRoyale';
+    src: url('./Fonts/BonheurRoyale-Regular.ttf');
+}
+
 /* soft UA reset */
 html,
 body {
@@ -15,3 +20,57 @@ body {
 }
 
 /* UA reset ends  */
+.content {
+    height: 100vh;
+    background-color: #F8FAF0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+    background-color: orange;
+    background-image: url(../src/Images/pexels-maria-orlova-4947396.jpg);
+    background-size: 85% 100%;
+}
+
+.header {
+    position: relative;
+
+    font-family: 'BonheurRoyale';
+    font-weight: bold;
+    padding: 5px;
+    color: whitesmoke;
+}
+
+.footer {
+    padding: 8px;
+    color: white;
+    font-size: 0.85rem;
+}
+
+.header,
+.footer {
+    text-align: center;
+    background-color: #4169e1;
+}
+
+.header span.heading {
+    font-size: 2.7rem;
+    letter-spacing: 7px;
+}
+
+.header .nav-menu {
+    display: inline-block;
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 3.3px;
+}
+
+.nav-menu a:first-child,
+.nav-menu a:nth-child(2) {
+    margin-right: 25px;
+}

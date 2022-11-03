@@ -18,10 +18,15 @@ const pageLoad = (element) => {
     _navMenu.classList.add('nav-menu');
 
     const _homeLink = document.createElement('a');
+    _homeLink.setAttribute('id', 'home-button');
     _homeLink.textContent = 'Home';
+
     const _menuLink = document.createElement('a');
+    _menuLink.setAttribute('id', 'menu-button');
     _menuLink.textContent = 'Menu';
+
     const _contactLink = document.createElement('a');
+    _contactLink.setAttribute('id', 'contact-button');
     _contactLink.textContent = 'Contact';
 
     _navMenu.append(_homeLink, _menuLink, _contactLink);

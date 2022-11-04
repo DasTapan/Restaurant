@@ -29,7 +29,7 @@ body {
 
 .main {
     flex-grow: 1;
-    background-image: url(../src/Images/pexels-maria-orlova-4947396.jpg);
+    background-image: url(../src/Images/background-image.jpg);
     background-size: 85% 100%;
 }
 
@@ -76,4 +76,15 @@ body {
 
 .nav-menu a {
     cursor: pointer;
+}
+
+.menu-card {
+    background-color: orange;
+    margin-bottom: 20px;
+    height: 150px;
+}
+
+.contact-card {
+    height: 400px;
+    background-color: blue;
 }

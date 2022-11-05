@@ -10,6 +10,7 @@ console.log(mainDiv.childElementCount);
 
 const handle = (event) => {
     let _linkId;
+
     if (event.target.nodeName == 'A') {
         console.log('Responding');
         _linkId = event.target.getAttribute('id');
@@ -25,19 +26,30 @@ const handle = (event) => {
         case 'menu-button':
             wipe().doClean(mainDiv);
             console.log('Everything cleared');
-            for(let i=0; i<9; i++){
+
+            let menuHeading = document.createElement('h3');
+            menuHeading.classList.add('menu-heading');
+            menuHeading.textContent = 'Menu'
+
+            let menuDiv = document.createElement('div');
+            menuDiv.classList.add('food-catalogue');
+            for(let i=0; i<7; i++) {
                 const element = document.createElement('div');
-                element.classList.add('menu-card');
-                mainDiv.appendChild(element);
-            }
+                element.classList.add('food-box');
+                menuDiv.appendChild(element);
+            };
+            mainDiv.append(menuHeading, menuDiv);
+
             break;
 
         case 'contact-button':
             wipe().doClean(mainDiv);
             console.log('Everything cleared');
-            const element = document.createElement('div');
-            element.classList.add('contact-card');
-            mainDiv.appendChild(element);
+
+            let contactDiv = document.createElement('div');
+            contactDiv.classList.add('contact-card');
+            mainDiv.appendChild(contactDiv);
+
             break;
 
         default:
@@ -53,6 +65,7 @@ const wipe = () => {
     };
 
     const doClean = (node) => {
+        node.classList.add('menu-home-view');
         _clean(node);
     };
 

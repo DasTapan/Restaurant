@@ -20,30 +20,36 @@ body {
 }
 
 /* UA reset ends  */
+html,
+body {
+    height: 100%;
+}
+
 .content {
-    height: 100vh;
+    height: 100%;
     background-color: #F8FAF0;
-    display: flex;
-    flex-direction: column;
+    --header-height: 60px;
+    --footer-height: 30px;
 }
 
 .main {
-    flex-grow: 1;
     background-image: url(../src/Images/background-image.jpg);
     background-size: 85% 100%;
+    height: calc(100% - (var(--header-height) + var(--footer-height)));
+    overflow: auto;
 }
 
 .header {
-    position: relative;
-
+    height: var(--header-height);
+    line-height: var(--header-height);
     font-family: 'BonheurRoyale';
     font-weight: bold;
-    padding: 5px;
     color: whitesmoke;
 }
 
 .footer {
-    padding: 8px;
+    height: var(--footer-height);
+    line-height: var(--footer-height);
     color: white;
     font-size: 0.85rem;
 }
@@ -60,10 +66,10 @@ body {
 }
 
 .header .nav-menu {
-    display: inline-block;
     position: absolute;
+    display: inline-block;
     right: 25px;
-    top: 15px;
+    top: 4px;
     font-size: 1.8rem;
     font-weight: bold;
     letter-spacing: 3.3px;
@@ -78,13 +84,33 @@ body {
     cursor: pointer;
 }
 
-.menu-card {
-    background-color: orange;
+.menu-home-view {
+    padding: 15px;
+}
+
+.menu-heading {
+    text-align: center;
+    margin-top: 0;
     margin-bottom: 20px;
-    height: 150px;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.food-catalogue {
+    background-color: orange;
+    border-radius: 10px;
+    width: 800px;
+    margin: 0 auto;
 }
 
 .contact-card {
     height: 400px;
     background-color: blue;
+}
+
+.food-box {
+    height: 430px;
+    background-color: blueviolet;
+    margin-bottom: 15px;
 }

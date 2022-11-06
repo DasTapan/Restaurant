@@ -98,13 +98,16 @@ body {
 }
 
 .food-catalogue {
-    background-color: orange;
+    background-color: black;
     border-radius: 10px;
-    /* width: 600px; */
-    /* width: 50vw; */
-    /* width: 1100px; */
     width: clamp(600px, 50vw, 1100px);
     margin: 0 auto;
+
+    display: grid;
+    grid-template-rows: repeat(3, 380px);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-auto-rows: 400px;
+    gap: 10px;
 }
 
 .contact-card {
@@ -113,7 +116,6 @@ body {
 }
 
 .food-box {
-    height: 430px;
-    background-color: blueviolet;
-    margin-bottom: 15px;
+    border: 1px solid greenyellow;
+    border-radius: inherit;
 }

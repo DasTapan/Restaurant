@@ -33,7 +33,7 @@ const handle = (event) => {
 
             let menuDiv = document.createElement('div');
             menuDiv.classList.add('food-catalogue');
-            for(let i=0; i<7; i++) {
+            for(let i=0; i<6; i++) {
                 const element = document.createElement('div');
                 element.classList.add('food-box');
                 menuDiv.appendChild(element);

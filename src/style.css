@@ -118,4 +118,28 @@ body {
 .food-box {
     border: 1px solid greenyellow;
     border-radius: inherit;
+
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.food-pic {
+    border-radius: 5px;
+    /* width: 260px; */
+    width: max(250px, 65%);
+    height: 225px;
+    background-image: url('./Images/sahi-samosa.jpg');
+    /* background-size: 100% 100%; */
+    background-size: cover;
+}
+
+.food-name {
+    padding: 8px 15px;
+    border: 1px solid white;
+    color: whitesmoke;
+    font-weight: bold;
+    border-radius: 3px;
 }

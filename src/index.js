@@ -33,9 +33,15 @@ const handle = (event) => {
 
             let menuDiv = document.createElement('div');
             menuDiv.classList.add('food-catalogue');
-            for(let i=0; i<6; i++) {
+            for (let i = 0; i < 6; i++) {
                 const element = document.createElement('div');
                 element.classList.add('food-box');
+                const childElementOne = document.createElement('div');
+                childElementOne.classList.add('food-pic');
+                const childElementTwo = document.createElement('div');
+                childElementTwo.textContent = 'Sahi Samosa'
+                childElementTwo.classList.add('food-name');
+                element.append(childElementOne, childElementTwo);
                 menuDiv.appendChild(element);
             };
             mainDiv.append(menuHeading, menuDiv);

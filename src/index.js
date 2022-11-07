@@ -10,6 +10,7 @@ console.log(mainDiv.childElementCount);
 
 const handle = (event) => {
     let _linkId;
+    const _foodArray = ['Sahi Samosa', 'Large Dosa', 'Tandoori Chicken', 'Naan Paneer', 'Dahi Pakhal', 'Large Thali'];
 
     if (event.target.nodeName == 'A') {
         console.log('Responding');
@@ -33,14 +34,18 @@ const handle = (event) => {
 
             let menuDiv = document.createElement('div');
             menuDiv.classList.add('food-catalogue');
+
             for (let i = 0; i < 6; i++) {
                 const element = document.createElement('div');
                 element.classList.add('food-box');
+
                 const childElementOne = document.createElement('div');
-                childElementOne.classList.add('food-pic');
+                childElementOne.classList.add('food-pic', `food${i + 1}`);
+
                 const childElementTwo = document.createElement('div');
-                childElementTwo.textContent = 'Sahi Samosa'
                 childElementTwo.classList.add('food-name');
+                childElementTwo.textContent = _foodArray[i];
+
                 element.append(childElementOne, childElementTwo);
                 menuDiv.appendChild(element);
             };

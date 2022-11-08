@@ -59,6 +59,43 @@ const handle = (event) => {
 
             let contactDiv = document.createElement('div');
             contactDiv.classList.add('contact-card');
+
+            let contactHeading = document.createElement('h2');
+            contactHeading.classList.add('contact-heading');
+            contactHeading.textContent = 'Royal Restaurant';
+
+            let addressBox = document.createElement('div');
+            addressBox.classList.add('address-box');
+            mainDiv.appendChild(contactDiv);
+
+            const spanOne = document.createElement('span');
+            spanOne.classList.add('span-one')
+            spanOne.textContent = 'C T Road';
+            const brOne = document.createElement('br');
+
+            const spanTwo = document.createElement('span');
+            spanTwo.classList.add('span-two')
+            spanTwo.textContent = 'Puri-2, Odisha'
+            const brTwo = document.createElement('br');
+
+            const spanThree = document.createElement('span');
+            spanThree.classList.add('span-three')
+            spanThree.textContent = 'PIN- 752002'
+            const brThree = document.createElement('br');
+
+            const spanFour = document.createElement('span');
+            spanFour.classList.add('span-four')
+            spanFour.textContent = 'Ph- 8280213987';
+            const brFour = document.createElement('br');
+
+            addressBox.append(spanOne, spanTwo, spanThree, spanFour);
+
+            spanOne.insertAdjacentElement('afterend', brOne);
+            spanTwo.insertAdjacentElement('afterend', brTwo);
+            spanThree.insertAdjacentElement('afterend', brThree);
+            spanFour.insertAdjacentElement('afterend', brFour);
+
+            contactDiv.append(contactHeading, addressBox);
             mainDiv.appendChild(contactDiv);
 
             break;
@@ -76,7 +113,7 @@ const wipe = () => {
     };
 
     const doClean = (node) => {
-        node.classList.add('menu-home-view');
+        node.classList.add('tab-style');
         _clean(node);
     };
 

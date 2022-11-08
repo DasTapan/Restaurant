@@ -84,7 +84,7 @@ body {
     cursor: pointer;
 }
 
-.menu-home-view {
+.tab-style {
     padding: 15px;
 }
 
@@ -98,7 +98,7 @@ body {
 }
 
 .food-catalogue {
-    background-color: black;
+    background-color: orangered;
     border-radius: 10px;
     width: clamp(600px, 50vw, 1100px);
     margin: 0 auto;
@@ -108,17 +108,23 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-auto-rows: 400px;
     column-gap: 20px;
-    row-gap: 40px;
+    row-gap: 30px;
 }
 
 .contact-card {
-    height: 400px;
+    padding: 25px;
+    height: 380px;
+    width: 525px;
+    border-radius: 10px;
+    margin: 7% auto;
+    color: white;
     background-color: blue;
 }
 
 .food-box {
-    border: 1px solid greenyellow;
+    border: 2px solid black;
     border-radius: inherit;
+    background-color: maroon;
 
     padding: 12px;
     display: flex;
@@ -167,4 +173,22 @@ body {
     color: whitesmoke;
     font-weight: bold;
     border-radius: 3px;
+}
+
+.contact-heading {
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.address-box {
+    width: 60%;
+    text-align: center;
+    line-height: 1.7;
+    margin: 55px auto;
+}
+
+.address-box span {
+    font-size: 1.4rem;
 }

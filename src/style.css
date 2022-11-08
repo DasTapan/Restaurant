@@ -52,10 +52,6 @@ body {
     color: red;
 }
 
-.nav-menu a:active {
-    transform: translateY(4px);
-}
-
 .content {
     height: 100%;
     background-color: #F8FAF0;
@@ -130,7 +126,7 @@ body {
 }
 
 .food-catalogue {
-    background-color: orangered;
+    background-color: rgb(255, 69, 0, 0.65);
     border-radius: 10px;
     width: clamp(600px, 50vw, 1100px);
     margin: 0 auto;
@@ -154,13 +150,13 @@ body {
     color: white;
     background-color: #000;
     opacity: 0.85;
-    /* border: 2px solid black; */
+    border: 2px solid #f5f5f5;
 }
 
-.food-box {
+.food-catalogue .food-box {
     border: 2px solid black;
     border-radius: inherit;
-    background-color: maroon;
+    background-color: rgb(128, 0, 0, 1);
 
     padding: 12px;
     display: flex;
